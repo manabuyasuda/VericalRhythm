@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* マージンは1remの倍数で指定 */
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol, dl,
+figure, figcaption, blockquote, pre, table, caption, hr,
+form, fieldset {
+  margin: 0 0 1rem;
+}
+
+ul, ol {
+   padding-left: ($base-unit * 2);
+}
+
+body {
+  /* 40文字分の最大幅 */
+  max-width: ($base-unit * 42);
+  margin: 0 auto;
+  padding: 0 $base-unit;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+  font-kerning: normal;
+}
+
+/* マージンは`1rem`の倍数で指定 */
+h1 {
+  margin: 2rem 0;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+h2 {
+  margin: 2rem 0 1rem;
+  font-size: 0.75rem;
+}
+
+h3 {
+  margin: 2rem 0 1rem;
+  font-size: 0.7rem;
+}
+
+h4 {
+  margin: 2rem 0 1rem;
+  font-size: 0.65rem;
+}
+
+h5 {
+  margin: 0 0 1rem;
+  font-size: 0.6rem;
+}
+
+h6 {
+  margin: 0 0 1rem;
+  font-size: 0.55rem;
+}

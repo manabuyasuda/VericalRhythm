@@ -1,0 +1,28 @@
+// デバッグ
+// <div class="verticalRhythm">
+//   <div class="baseline">&nbsp;</div>
+//   <div class="baseline">&nbsp;</div>
+//   <div class="baseline">&nbsp;</div>
+// </div>
+.verticalRhythm {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  .baseline {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1rem;
+    box-shadow: 0 1px 0 #eee;
+  }
+}
+
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol, dl,
+figure, figcaption, blockquote, pre, table, caption, hr,
+form, fieldset {
+  box-shadow: 0 1px 0 #faa, inset 0 1px 0 #faa;
+}

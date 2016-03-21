@@ -1,0 +1,23 @@
+// ページの基準になるフォントサイズ
+// 15px / 24px = 0.625rem
+// 24px / 15px = 1.6（line-height）
+$base-unit: 0.625rem !default;
+
+/* ページの基準になるbaseline（行の高さ） */
+// 0.625rem * 24px = 15px
+// 0.625rem * 26px = 16.25px
+html {
+  font-size: 24px;
+  @media (min-width: 1000px) {
+   font-size: 26px;
+  }
+}
+
+/**
+ * `body`以降の要素のbaselineを
+ * `html`に指定した`font-size`に定義する
+ */
+body {
+  font-size: $base-unit;
+  line-height: 1rem;
+}
